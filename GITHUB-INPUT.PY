@@ -97,7 +97,7 @@ def main():
         run_cmd('git commit -m "INITIAL COMMIT"', cwd=repo_path)
         print_status("Commit inicial creado.", Colors.OKGREEN)
 
-        # Subir al remoto
+        # Forzar rama main y pushear
         run_cmd("git branch -M main", cwd=repo_path)
         run_cmd("git push -u origin main", cwd=repo_path)
         print_status("Commit inicial subido al remoto.", Colors.OKGREEN)
@@ -111,7 +111,8 @@ def main():
         run_cmd(f'git commit -m "{commit_msg}"', cwd=repo_path)
         print_status(f"Commit creado: {commit_msg}", Colors.OKGREEN)
 
-        # Push al remoto
+        # Forzar rama main y pushear
+        run_cmd("git branch -M main", cwd=repo_path)
         run_cmd("git push origin main", cwd=repo_path)
         print_status("Cambios subidos al remoto.", Colors.OKGREEN)
 
