@@ -1,0 +1,3 @@
+# SKYDROPX
+
+Repositorio inicializado automáticamente.
